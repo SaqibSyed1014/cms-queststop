@@ -46,9 +46,9 @@ export default {
           hiddenOnCollapse: true,
         },
         {
-          href: '/home',
-          title: 'Home',
-          icon:  "fas fa-home"
+          href: '/profile',
+          title: 'Profile',
+          icon:  "fas fa-id-badge"
         },
         {
           href: '/attendance',
@@ -59,6 +59,11 @@ export default {
           href: '/report',
           title: 'Report',
           icon:  "fas fa-file-alt"
+        },
+        {
+          href: '/leave',
+          title: 'Leave',
+          icon:  "fas fa-calendar-times"
         },
         {
           component: separator

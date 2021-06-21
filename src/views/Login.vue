@@ -3,7 +3,9 @@
     <form>
       <div class="form-wrapper">
         <div class="login p-5 text-center">
-          <h2 class="">Login Form</h2>
+
+          <h2>Login Form</h2>
+
           <b-row class="input-group">
             <b-col sm="3">
               <label class="mb-0">Email:</label>
@@ -20,6 +22,7 @@
               ></b-form-input>
             </b-col>
           </b-row>
+
           <b-row class="input-group" >
             <b-col sm="3">
               <label class="mb-0">Password:</label>
@@ -36,12 +39,11 @@
               ></b-form-input>
             </b-col>
           </b-row>
-          <div class="createAcc mx-auto w-75">
-            <p>Don't have an Account? Register <router-link to="/register">Here!</router-link></p>
-          </div>
+
           <div class="errorMsg" v-if="showError">
             <p>Invalid Credentials</p>
           </div>
+
           <div class="btn d-block">
             <b-button class="btn-text" @click="formValidation">Log In</b-button>
           </div>

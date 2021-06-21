@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#" class="pl-3">NavBar</b-navbar-brand>
+      <b-navbar-brand href="#" class="brand-name pl-3">QuestStop</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -11,7 +11,7 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-form>
             <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+            <b-button size="sm" class="my-2 my-sm-0 px-3" type="submit">Search</b-button>
           </b-nav-form>
 
           <b-nav-item-dropdown text="Lang" right>
@@ -51,6 +51,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.navbar-dark{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.16);
+}
+.navbar-dark .navbar-brand {
+  color: var(--blueColor);
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: .2rem;
+}
+.form-inline{
+  margin-left: .8rem;
+  margin-right: .8rem;
+}
+.form-control-sm:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px var(--blueColor);
+}
+.btn-secondary{
+  background-color: var(--blueColor);
+  color: #262626;
+  /*padding: 0 2rem;*/
+}
+.btn-secondary:hover{
+  background-color: var(--blueColor);
+  color: #262626;
+  box-shadow: 0 0 10px var(--blueColor);
+}
+.form-inline{
 
+}
 </style>

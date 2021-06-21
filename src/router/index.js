@@ -1,12 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import store from "../store";
-import Home from "../views/Home.vue";
+import Profile from "../views/Profile.vue";
 import Dashboard from "@/views/Dashboard";
 import Login from "../views/Login";
 import Attendance from "@/views/Attendance";
 import Report from "@/views/Report";
 import Register from "@/views/Register";
+import ApplyForLeave from "@/views/ApplyForLeave";
 
 Vue.use(VueRouter);
 
@@ -17,9 +18,9 @@ const routes = [
     component: Dashboard,
     children: [
       {
-        path: "/Home",
-        name: "Home",
-        component: Home,
+        path: "/profile",
+        name: "Profile",
+        component: Profile,
       },
       {
         path: "/attendance",
@@ -32,6 +33,12 @@ const routes = [
         component: Report,
         // meta: { guest: true },
       },
+      {
+        path: "/leave",
+        name: "Leave",
+        component: ApplyForLeave,
+      },
+
     ]
   },
   {
@@ -44,11 +51,7 @@ const routes = [
     path: "/register",
     name: "Register",
     component: Register,
-  },
-  {
-    path: "/posts",
-    name: "Posts",
-    meta: { requiresAuth: true },
+    // meta: { requiresAuth: true },
   },
 ];
 
