@@ -1,15 +1,20 @@
 <template>
 <div class="box-container">
-  <h5>Mark the button below to mark yourself present</h5>
+  <h5>Click the button below to mark yourself present</h5>
   <div class="text-right">
-    <b-button>Present</b-button>
+    <b-button @click="markAttendance">Present</b-button>
   </div>
 </div>
 </template>
 
 <script>
 export default {
-name: "Attendance"
+name: "Attendance",
+  methods: {
+    markAttendance(){
+      this.$store.dispatch('markingAttendance')
+    }
+  }
 }
 </script>
 
@@ -22,7 +27,7 @@ button{
   color: #262626;
   font-weight: 600;
 }
-.btn-secondary:hover{
+button:hover{
   background-color: var(--blueColor);
   color: #262626;
   box-shadow: 0 0 10px var(--blueColor);

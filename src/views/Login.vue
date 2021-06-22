@@ -69,13 +69,7 @@ export default {
       showError: false
     };
   },
-  computed: {
-    // emailState(){
-    //
-    //
-    //   // return this.form.email.length <= 4 ? null : false;
-    // }
-  },
+  computed: {},
   methods: {
     formValidation(){
       console.log(this.form.email)
