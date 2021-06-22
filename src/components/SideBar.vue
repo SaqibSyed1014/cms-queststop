@@ -186,7 +186,6 @@ body {
 }
 .demo {
   padding: 50px;
-  text-align: center;
 }
 .container {
   max-width: 900px;
