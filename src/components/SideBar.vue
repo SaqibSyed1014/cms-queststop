@@ -56,13 +56,28 @@ export default {
           icon:  "fas fa-clipboard-check"
         },
         {
-          href: '/report',
-          title: 'Report',
+          href: '/attendance-record',
+          title: 'Attendance Record',
+          icon:  "fas fa-id-badge"
+        },
+        {
+          href: '/meeting-record',
+          title: 'Meeting Record',
+          icon:  "fas fa-id-badge"
+        },
+        {
+          href: '/warnings',
+          title: 'Warnings',
           icon:  "fas fa-file-alt"
         },
         {
-          href: '/leave',
-          title: 'Leave',
+          href: '/logs',
+          title: 'Logs',
+          icon:  "fas fa-file-alt"
+        },
+        {
+          href: '/apply-for-leave',
+          title: 'Apply for Leave',
           icon:  "fas fa-calendar-times"
         },
         {

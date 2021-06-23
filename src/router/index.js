@@ -5,7 +5,10 @@ import Profile from "../views/Profile.vue";
 import Dashboard from "@/views/Dashboard";
 import Login from "../views/Login";
 import Attendance from "@/views/Attendance";
-import Report from "@/views/Report";
+import AttendanceRecord from "@/views/AttendanceRecord";
+import MeetingRecord from "@/views/MeetingRecord";
+import Warnings from "@/views/Warnings";
+import Logs from "@/views/Logs";
 import Register from "@/views/Register";
 import ApplyForLeave from "@/views/ApplyForLeave";
 
@@ -28,13 +31,33 @@ const routes = [
         component: Attendance,
       },
       {
-        path: "/report",
-        name: "Report",
-        component: Report,
-        // meta: { guest: true },
+        path: "/attendance-record",
+        name: "Attendance Record",
+        component: AttendanceRecord,
       },
       {
-        path: "/leave",
+        path: "/meeting-record",
+        name: "Meeting Record",
+        component: MeetingRecord,
+      },
+      {
+        path: "/warnings",
+        name: "Warning",
+        component: Warnings,
+      },
+      {
+        path: "/logs",
+        name: "Logs",
+        component: Logs,
+      },
+      // {
+      //   path: "/logs",
+      //   name: "Logs",
+      //   component: Logs,
+      //   // meta: { guest: true },
+      // },
+      {
+        path: "/apply-for-leave",
         name: "Leave",
         component: ApplyForLeave,
       },

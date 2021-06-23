@@ -69,12 +69,12 @@ export default {
   outline: none !important;
   box-shadow: 0 0 10px var(--blueColor);
 }
-.btn-secondary{
+button{
   background-color: var(--blueColor);
   color: #262626;
   /*padding: 0 2rem;*/
 }
-.btn-secondary:hover{
+button:hover{
   background-color: var(--blueColor);
   color: #262626;
   box-shadow: 0 0 10px var(--blueColor);

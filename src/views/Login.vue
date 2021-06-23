@@ -7,10 +7,10 @@
           <h2>Login Form</h2>
 
           <b-row class="input-group">
-            <b-col sm="3">
-              <label class="mb-0">Email:</label>
+            <b-col lg="3" md="12">
+              <label class="label mb-0">Email:</label>
             </b-col>
-            <b-col sm="9">
+            <b-col lg="9" md="12">
               <b-form-input
                   class="input-field"
                   type="email"
@@ -24,10 +24,10 @@
           </b-row>
 
           <b-row class="input-group" >
-            <b-col sm="3">
-              <label class="mb-0">Password:</label>
+            <b-col lg="3" sm="12">
+              <label class="label mb-0">Password:</label>
             </b-col>
-            <b-col sm="9">
+            <b-col lg="9" sm="12">
               <b-form-input
                   type="password"
                   class="input-field"
@@ -117,11 +117,11 @@ h2{
   margin: 1rem auto;
   width: 75%;
 }
-label {
+.label {
   margin: 5px;
   padding: 10px;
 }
-input {
+.input-field {
   margin: 5px;
   padding: 1.5rem 2rem;
   border-radius: 30px;
