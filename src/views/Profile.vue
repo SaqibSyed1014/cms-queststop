@@ -30,6 +30,9 @@
 export default {
   name: "Profile",
   components: {},
+  created() {
+    this.$store.dispatch('getUserDetails')
+  }
 };
 </script>
 <style scoped>

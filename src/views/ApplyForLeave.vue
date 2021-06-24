@@ -52,6 +52,9 @@
             ></b-form-textarea>
           </b-col>
         </b-row>
+        <div class="errorMsg text-center" v-if="showError">
+          <p>Please fill out the Form!</p>
+        </div>
         <div class="btn d-block">
           <b-button class="btn-text" @click="validatingForm">Apply</b-button>
         </div>
@@ -71,7 +74,8 @@ export default {
         startDate: '',
         endDate: '',
         reason: ''
-      }
+      },
+      showError: false
     }
   },
   methods: {
@@ -80,6 +84,7 @@ export default {
         this.applyingForLeave()
       }
       else {
+        this.showError=true
         console.log('error')
       }
     },
